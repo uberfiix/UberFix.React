@@ -7,6 +7,10 @@ const Login = lazy(() => import("@/pages/auth/Login"));
 const Register = lazy(() => import("@/pages/auth/Register"));
 const ForgotPassword = lazy(() => import("@/pages/auth/ForgotPassword"));
 const AuthCallback = lazy(() => import("@/pages/auth/AuthCallback"));
+const UpdatePassword = lazy(() => import("@/pages/auth/UpdatePassword"));
+const VerifyEmailChange = lazy(() => import("@/pages/auth/VerifyEmailChange"));
+const Reauth = lazy(() => import("@/pages/auth/Reauth"));
+const MagicLink = lazy(() => import("@/pages/auth/MagicLink"));
 
 // Public pages
 const About = lazy(() => import("@/pages/public/About"));
@@ -43,6 +47,10 @@ export const publicRoutes = [
   { path: "/register", element: <Register /> },
   { path: "/forgot-password", element: <ForgotPassword /> },
   { path: "/auth/callback", element: <AuthCallback /> },
+  { path: "/auth/update-password", element: <UpdatePassword /> },
+  { path: "/auth/verify-email-change", element: <VerifyEmailChange /> },
+  { path: "/auth/reauth", element: <Reauth /> },
+  { path: "/auth/magic", element: <MagicLink /> },
   { path: "/about", element: <About /> },
   { path: "/privacy-policy", element: <PrivacyPolicy /> },
   { path: "/terms-of-service", element: <TermsOfService /> },
@@ -56,6 +64,7 @@ export const publicRoutes = [
   { path: "/pwa-settings", element: <PWASettings /> },
   { path: "/quick-request/:propertyId", element: <QuickRequest /> },
   { path: "/quick-request", element: <QuickRequestFromMap /> },
+  { path: "/quick-request-from-map", element: <QuickRequestFromMap /> },
   { path: "/track-orders", element: <TrackOrders /> },
   { path: "/completed-services", element: <CompletedServices /> },
   { path: "/technicians/register", element: <TechnicianRegistration /> },
